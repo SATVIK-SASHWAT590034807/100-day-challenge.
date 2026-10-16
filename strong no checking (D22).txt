@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main()
+{
+    int n, temp, i, digits, factorial, sum = 0;
+
+    printf("Enter a number: ");
+    scanf("%d", &n);
+
+    temp = n;
+
+    while(temp > 0)
+    {
+        digits = temp % 10;
+        factorial = 1;
+
+        for(i = digits; i > 0; i--)
+        {
+            factorial = factorial * i;
+        }
+
+        sum = sum + factorial;
+        temp = temp / 10;
+    }
+
+    if(n > 0 && sum == n)
+        printf("Strong Number");
+    else
+        printf("Not a Strong Number");
+
+    return 0;
+}
