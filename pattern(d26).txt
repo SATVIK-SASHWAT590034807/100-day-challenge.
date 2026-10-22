@@ -1,0 +1,20 @@
+# include<stdio.h>
+int main()
+{int n,i,j;
+printf("enter no of Rows  you want\n");
+scanf("%d",&n);
+
+for(i=n;i>0;i--)
+
+{for(j=1;j<i;j++)
+{printf(" ");
+}
+
+for(j=i;j<=n;j++)
+{printf("%d",j);
+}
+printf("\n");}
+
+
+
+}
