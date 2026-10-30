@@ -1,0 +1,21 @@
+# include<stdio.h>
+
+
+int main()
+{int n,i,j,count=0,factor=0;
+printf("enter the no which you want ");
+scanf("%d",&n);
+printf(" your prime no is "); 
+for(i=1;i<=n;i++)
+{for(j=1;j<=i;j++)
+{if(i%j==0)
+{factor=factor+1;
+count=count+1;
+}
+}
+if (factor<=2)
+printf("%d",i);
+factor=0;
+printf("\n") ; }}
+
+
