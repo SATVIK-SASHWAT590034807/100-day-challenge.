@@ -1,0 +1,41 @@
+# include<stdio.h>
+
+
+int main()
+{int n,m,j,i,a[100],b[100],l,sum[100];
+printf("enter the no of elements which you want in array1\n\n ");
+scanf("%d",&n);
+printf("enter the no of elements which you want in array2\n\n ");
+scanf("%d",&m);
+printf("enter your  elements of array1\n");
+for(i=0;i<n;i++)
+
+{scanf("%d",&a[i]);}
+printf("enter your  elements of array2\n");
+for(i=0;i<m;i++)
+
+{scanf("%d",&b[i]);}
+
+printf("your array 1 is ");
+
+for(i=0;i<n;i++)
+{printf("  %d ",a[i]);}
+
+printf("your array 2 is ");
+for(i=0;i<m;i++)
+{printf("  %d ",b[i]);}
+printf("\n your sum array is ");
+for(i=0;i<n&&i<m;i++)
+
+{sum[i]=a[i]+b[i];
+
+
+printf("%d ",sum[i]);}
+ }
+ 
+
+
+
+
+
+
