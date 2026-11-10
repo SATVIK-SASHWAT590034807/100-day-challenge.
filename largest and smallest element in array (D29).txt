@@ -1,0 +1,39 @@
+# include<stdio.h>
+
+
+int main()
+{int i, n,a[100],l,largest=0,smallest;
+printf("enter the no of elements which you want in array\n\n ");
+scanf("%d",&n);
+
+printf("enter your  elements of array\n");
+for(i=0;i<n;i++)
+scanf("%d",&a[i]);
+
+
+printf("your array  is \n");
+
+for(i=0;i<n;i++)
+{printf("  %d ",a[i]);}
+
+
+for(i=0;i<n;i++)
+{if(a[i]>largest)
+largest=a[i];}
+
+smallest=a[1];
+for(i=0;i<n;i++)
+{
+if(a[i]<smallest)
+smallest=a[i];}
+
+printf("\nlargest element is %d\n",largest);
+printf("smallest element is %d\n",smallest);
+
+}
+
+
+
+
+
+
