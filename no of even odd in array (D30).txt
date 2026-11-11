@@ -1,0 +1,36 @@
+# include<stdio.h>
+
+
+int main()
+{int i, n,a[100],l,even=0,odd=0;
+printf("enter the no of elements which you want in array\n\n ");
+scanf("%d",&n);
+
+printf("enter your  elements of array\n");
+for(i=0;i<n;i++)
+scanf("%d",&a[i]);
+
+
+printf("your array  is \n");
+
+for(i=0;i<n;i++)
+{printf("  %d ",a[i]);}
+
+
+for(i=0;i<n;i++)
+{if(a[i]%2==0)
+even=even+1;
+else
+odd=odd+1;}
+
+
+printf("\n No of even element is %d\n",even);
+printf("No of odd  element is %d\n",odd);
+
+}
+
+
+
+
+
+
