@@ -1,0 +1,31 @@
+# include<stdio.h>
+
+
+int main()
+{int i, n,a[100],search,found=0;
+printf("enter the no of elements which you want in array\n\n ");
+scanf("%d",&n);
+
+printf("enter your  elements of array\n");
+for(i=0;i<n;i++)
+scanf("%d",&a[i]);
+
+printf("enter the element you want to find ");
+scanf("%d",&search);
+
+printf("your array  is \n");
+
+for(i=0;i<n;i++)
+{printf("  %d ",a[i]);}
+
+
+for(i=0;i<n;i++)
+{if(a[i]==search)
+{found=found+1;
+printf("\nyour element is found in index %d",i);}
+}
+
+
+printf("\n No of  element found is %d\n",found);
+}
+
